@@ -1,0 +1,157 @@
+ /* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar-container {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.navbar-container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container .logo h1 {
+    font-size: 1rem;
+    justify-content: center;
+    
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 15px 5px 5px;
+
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(../images/1\ \(7\).webp); /* Replace with your image */
+    background-size: cover;
+    background-position:center;
+    color: rgb(255, 255, 255);
+    padding: 60px 20px;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    padding: 10px 30px;
+    background-color: rgb(9, 212, 212);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.cta-btn:hover {
+    background-color: rgb(6, 158, 158);
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    text-align: center;
+    font-style:italic;
+}
+
+.feature-item {
+    width: 30%;
+}
+
+.feature-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container nav {
+        flex-direction:row;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: row;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .feature-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
